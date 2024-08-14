@@ -6,7 +6,7 @@ Este projeto tem como objetivo explorar o conceito de Padrões de Projeto. Foram
 
 ### 1. **Singleton**
    - **Propósito**: Garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
-   - **Implementação**: A classe `Main` demonstra o padrão Singleton, garantindo que uma única instância de conexão com o banco de dados seja utilizada ao longo da aplicação.
+   - **Implementação**: A classe `PedidoManager` demonstra o padrão Singleton, garantindo que uma única instância de conexão com o banco de dados seja utilizada ao longo da aplicação.
    
 ### 2. **Factory Method**
    - **Propósito**: Define uma interface para criar um objeto e permite que as subclasses alterem o tipo de objeto que será criado.
