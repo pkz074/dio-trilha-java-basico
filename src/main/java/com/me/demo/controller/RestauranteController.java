@@ -1,4 +1,4 @@
-package main.java.com.me.demo.controller;
+package com.me.demo.controller;
 
 import com.me.demo.entity.Restaurante;
 import com.me.demo.service.RestauranteService;

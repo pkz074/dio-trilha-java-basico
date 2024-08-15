@@ -1,4 +1,4 @@
-package main.java.com.me.demo.service;
+package com.me.demo.service;
 
 import com.me.demo.entity.Bebida;
 import com.me.demo.repository.BebidaRepository;
