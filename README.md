@@ -1,18 +1,45 @@
-## Getting Started
+# Projeto API de Restaurante
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição
 
-## Folder Structure
+Este projeto é uma API de restaurante desenvolvida em Java utilizando Spring Boot. A API permite gerenciar informações sobre pratos, bebidas e restaurantes, incluindo operações básicas de CRUD (Create, Read, Update, Delete).
 
-The workspace contains two folders by default, where:
+## Estrutura do Projeto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O projeto é dividido nas seguintes principais partes:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Entidades**: Representam os modelos de dados para `Prato`, `Bebida`, e `Restaurante`.
+- **Repositórios**: Interfaces que extendem `JpaRepository` para banco de dados.
+- **Serviços**: Contêm a lógica para manipulação de entidades.
+- **Controladores**: Endpoints REST para a API.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Dependências
 
-## Dependency Management
+- Java 17
+- Spring Boot 3.2.8
+- H2 Database (para testes)
+- PostgreSQL (para produção)
+- Gradle (para build)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Configuração do Ambiente
+
+1. **Clonar o Repositório**
+
+   ```bash
+   git clone https://github.com/pkz074/dio-trilha-java-basico.git
+   cd dio-trilha-java-basico
+
+2. **Configurar o Banco de Dados**
+
+   H2: Configurado para testes, geralmente em memória.
+   PostgreSQL: Configurado para produção.
+   Atualize as credenciais e URL do banco de dados em application.properties.
+
+3. **Construir o Projeto**
+
+   Execute o comando abaixo para construir o projeto usando Gradle:
+   "./gradlew build"
+
+4. **Execute**
+   
+   "./gradlew bootRun"
